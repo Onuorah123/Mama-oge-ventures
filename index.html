@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Shop quality hair attachments and weavons at affordable retail and wholesale prices from Mama Oge Ventures, Onitsha. Nationwide delivery available.">
+
+    <title>Mama Oge Ventures | Quality Hair at Affordable Prices</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="announcement">Quality hair, thoughtful prices · Onitsha &amp; nationwide delivery</div>
+
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo" aria-label="Mama Oge Ventures home">
+                MAMA OGE
+                <span>VENTURES</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#wholesale">Wholesale</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#cart" class="cart-link">Cart (<span id="cart-count">0</span>)</a>
+                <a href="#products" class="nav-cta">Explore the shop</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="subtitle">Your Onitsha hair destination</p>
+                <h1>Find the hair that feels like you.</h1>
+                <p>From everyday favourites to your next special look, discover quality attachments and weavons at prices that make feeling beautiful easy.</p>
+                <div class="hero-actions">
+                    <a href="#products" class="shop-btn">Explore the collection</a>
+                    <a href="#wholesale" class="text-link">Shopping for your business?</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/darling%20superstar.jpeg" alt="Darling Superstar hair extensions from Mama Oge Ventures">
+            </div>
+        </section>
+
+        <section class="benefits" aria-label="Why shop with Mama Oge Ventures">
+            <div class="benefit">
+                <strong>Quality you can feel</strong>
+                <span>Carefully selected hair favourites</span>
+            </div>
+            <div class="benefit">
+                <strong>Retail &amp; wholesale</strong>
+                <span>Options for every kind of customer</span>
+            </div>
+            <div class="benefit">
+                <strong>Delivery across Nigeria</strong>
+                <span>Shop from Onitsha or from afar</span>
+            </div>
+        </section>
+
+        <section class="products-section" id="products">
+            <div class="section-heading">
+                <p>Made for your next look</p>
+                <h2>Explore Our Products</h2>
+                <span>Find a new favourite for every style and every day.</span>
+            </div>
+
+            <label class="product-search">
+                <span>Find your style</span>
+                <input id="product-search" type="search" placeholder="Search hair styles..." autocomplete="off">
+            </label>
+            <div class="product-filters" role="group" aria-label="Filter hair styles">
+                <button class="filter-button" type="button" data-filter="all" aria-pressed="true">All styles</button>
+                <button class="filter-button" type="button" data-filter="braids" aria-pressed="false">Braids</button>
+                <button class="filter-button" type="button" data-filter="curls" aria-pressed="false">Curls</button>
+                <button class="filter-button" type="button" data-filter="weaves" aria-pressed="false">Weaves</button>
+            </div>
+            <p class="filter-status" aria-live="polite"></p>
+
+            <div class="product-container">
+                <article class="product-card" data-category="curls">
+                    <img src="images/pixie%20curls.jpg" alt="Pixie Curls hair style" loading="lazy">
+                    <div class="product-info">
+                        <h3>Pixie Curls</h3>
+                        <p class="product-price" data-price-for="pixie-curls"></p>
+                        <p>Beautiful curls for a soft, standout look.</p>
+                        <button class="product-details-button" type="button" data-details="pixie-curls">View details</button>
+                        <button class="add-to-cart" type="button" data-product-id="pixie-curls">Add to cart</button>
+                    </div>
+                </article>
+                <article class="product-card" data-category="curls">
+                    <img src="images/french%20curl.jpg" alt="French Curl hair extensions" loading="lazy">
+                    <div class="product-info">
+                        <h3>French Curl</h3>
+                        <p class="product-price" data-price-for="french-curl"></p>
+                        <p>Full, flowing curls for an effortlessly elegant finish.</p>
+                        <button class="product-details-button" type="button" data-details="french-curl">View details</button>
+                        <button class="add-to-cart" type="button" data-product-id="french-curl">Add to cart</button>
+                    </div>
+                </article>
+                <article class="product-card" data-category="braids">
+                    <img src="images/lush%20hair.png" alt="Lush Hair braid extensions" loading="lazy">
+                    <div class="product-info">
+                        <h3>Lush Hair</h3>
+                        <p class="product-price" data-price-for="lush-hair"></p>
+                        <p>A versatile everyday favourite, ready for your next style.</p>
+                        <button class="product-details-button" type="button" data-details="lush-hair">View details</button>
+                        <button class="add-to-cart" type="button" data-product-id="lush-hair">Add to cart</button>
+                    </div>
+                </article>
+                <article class="product-card" data-category="braids">
+                    <img src="images/darling%20superstar.jpeg" alt="Darling Superstar hair extensions" loading="lazy">
+                    <div class="product-info">
+                        <h3>Darling Superstar</h3>
+                        <p class="product-price" data-price-for="darling-superstar"></p>
+                        <p>Explore a trusted classic in a range of beautiful shades.</p>
+                        <button class="product-details-button" type="button" data-details="darling-superstar">View details</button>
+                        <button class="add-to-cart" type="button" data-product-id="darling-superstar">Add to cart</button>
+                    </div>
+                </article>
+                <article class="product-card" data-category="braids">
+                    <img src="images\passion twist.jpg" alt="Original illustration of passion twist hair" loading="lazy">
+                    <div class="product-info">
+                        <h3>Passion Twist</h3>
+                        <p class="product-price" data-price-for="passion-twist"></p>
+                        <p>Light, textured twists for a relaxed protective style.</p>
+                        <button class="product-details-button" type="button" data-details="passion-twist">View details</button>
+                        <button class="add-to-cart" type="button" data-product-id="passion-twist">Add to cart</button>
+                    </div>
+                </article>
+                <article class="product-card" data-category="braids">
+                    <img src="images\afro kinky bulk.jpg" alt="Original illustration of afro kinky bulk hair" loading="lazy">
+                    <div class="product-info">
+                        <h3>Afro Kinky Bulk</h3>
+                        <p class="product-price" data-price-for="afro-kinky-bulk"></p>
+                        <p>Natural-looking texture with beautiful volume.</p>
+                        <button class="product-details-button" type="button" data-details="afro-kinky-bulk">View details</button>
+                        <button class="add-to-cart" type="button" data-product-id="afro-kinky-bulk">Add to cart</button>
+                    </div>
+                </article>
+                <article class="product-card" data-category="curls">
+                    <img src="images\boho water wave.jpg" alt="Original illustration of boho water wave hair" loading="lazy">
+                    <div class="product-info">
+                        <h3>Boho Water Wave</h3>
+                        <p class="product-price" data-price-for="boho-water-wave"></p>
+                        <p>Soft waves that bring movement to your look.</p>
+                        <button class="product-details-button" type="button" data-details="boho-water-wave">View details</button>
+                        <button class="add-to-cart" type="button" data-product-id="boho-water-wave">Add to cart</button>
+                    </div>
+                </article>
+                <article class="product-card" data-category="weaves">
+                    <img src="images\silky straight weave.jpg" alt="Original illustration of silky straight weave hair" loading="lazy">
+                    <div class="product-info">
+                        <h3>Silky Straight Weave</h3>
+                        <p class="product-price" data-price-for="silky-straight-weave"></p>
+                        <p>A smooth, timeless look that styles with ease.</p>
+                        <button class="product-details-button" type="button" data-details="silky-straight-weave">View details</button>
+                        <button class="add-to-cart" type="button" data-product-id="silky-straight-weave">Add to cart</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="cart-checkout-section" id="cart">
+            <div class="section-heading">
+                <p>Your selection</p>
+                <h2>Your Shopping Cart</h2>
+                <span>Adjust quantities before you check out.</span>
+            </div>
+            <div class="cart-layout">
+                <div class="cart-panel">
+                    <div id="cart-items" aria-live="polite"></div>
+                    <p class="cart-empty" id="cart-empty">Your cart is waiting for its first favourite.</p>
+                </div>
+                <aside class="cart-summary">
+                    <h3>Order total</h3>
+                    <p>Product subtotal <strong id="cart-subtotal">₦0</strong></p>
+                    <p class="cart-total">Total <strong id="cart-total">₦0</strong></p>
+                    <a href="#checkout" class="shop-btn" id="checkout-link">Continue to checkout</a>
+                </aside>
+            </div>
+        </section>
+
+        <section class="checkout-section" id="checkout">
+            <div class="section-heading">
+                <p>Almost yours</p>
+                <h2>Delivery &amp; Checkout</h2>
+                <span>Complete your details to place your order.</span>
+            </div>
+            <div class="checkout-layout">
+                <form id="checkout-form" class="checkout-form">
+                    <label>Full name
+                        <input name="customerName" type="text" autocomplete="name" required maxlength="120">
+                    </label>
+                    <label>Phone number
+                        <input name="phone" type="tel" autocomplete="tel" required maxlength="20" placeholder="e.g. 08012345678">
+                    </label>
+                    <label>Delivery address
+                        <textarea name="address" autocomplete="street-address" required maxlength="500" rows="3"></textarea>
+                    </label>
+                    <label>State
+                        <select name="state" required>
+                            <option value="">Select a state</option>
+                            <option>Abia</option><option>Adamawa</option><option>Akwa Ibom</option><option>Anambra</option>
+                            <option>Bauchi</option><option>Bayelsa</option><option>Benue</option><option>Borno</option>
+                            <option>Cross River</option><option>Delta</option><option>Ebonyi</option><option>Edo</option>
+                            <option>Ekiti</option><option>Enugu</option><option>FCT</option><option>Gombe</option>
+                            <option>Imo</option><option>Jigawa</option><option>Kaduna</option><option>Kano</option>
+                            <option>Katsina</option><option>Kebbi</option><option>Kogi</option><option>Kwara</option>
+                            <option>Lagos</option><option>Nasarawa</option><option>Niger</option><option>Ogun</option>
+                            <option>Ondo</option><option>Osun</option><option>Oyo</option><option>Plateau</option>
+                            <option>Rivers</option><option>Sokoto</option><option>Taraba</option><option>Yobe</option>
+                            <option>Zamfara</option>
+                        </select>
+                    </label>
+                    <label>Order type
+                        <select name="orderType" required>
+                            <option value="retail">Retail</option>
+                            <option value="wholesale">Wholesale</option>
+                        </select>
+                        <small>Wholesale orders currently use the same listed product prices.</small>
+                    </label>
+                    <button class="shop-btn" type="submit" id="place-order-button">Place order</button>
+                    <p class="checkout-message" id="checkout-message" role="status" aria-live="polite"></p>
+                </form>
+
+                <aside class="checkout-summary">
+                    <h3>Order summary</h3>
+                    <div id="checkout-items"></div>
+                    <p class="checkout-total">Amount to transfer <strong id="checkout-total">₦0</strong></p>
+                    <div id="payment-instructions" class="payment-instructions" hidden>
+                        <h3>Pay by OPay transfer</h3>
+                        <p>Account name: <strong id="opay-name"></strong></p>
+                        <p>OPay account number: <strong id="opay-number"></strong></p>
+                        <p>Transfer the exact order total above. We’ll confirm your payment manually.</p>
+                        <a class="shop-btn" id="receipt-whatsapp" target="_blank" rel="noopener noreferrer">Send receipt on WhatsApp</a>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <dialog class="product-dialog" id="product-dialog">
+            <button type="button" class="dialog-close" aria-label="Close product details">×</button>
+            <img id="dialog-image" alt="">
+            <div>
+                <p class="subtitle">Product details</p>
+                <h2 id="dialog-title"></h2>
+                <p id="dialog-description"></p>
+                <strong id="dialog-price"></strong>
+                <button type="button" class="shop-btn" id="dialog-add-to-cart">Add to cart</button>
+            </div>
+        </dialog>
+
+        <section class="wholesale-section" id="wholesale">
+            <div>
+                <p class="subtitle">For stylists, traders &amp; bulk buyers</p>
+                <h2>Good hair is even better in bulk.</h2>
+                <p>Looking to stock up? We offer retail and wholesale options on quality hair products. Get in touch to ask about what’s available.</p>
+                <a href="#contact" class="shop-btn">Talk to our store</a>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="about-copy">
+                <p>Rooted in Onitsha</p>
+                <h2>A little about us.</h2>
+            </div>
+            <p>Mama Oge Ventures is a hair products business based in Onitsha, Anambra State. We offer quality attachments and weavons at affordable prices, serving both retail and wholesale customers. Shop with us in-store or arrange delivery across Nigeria.</p>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>MAMA OGE VENTURES</h2>
+                <p>Your Onitsha destination for quality attachments and weavons at affordable prices.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#products">Shop</a>
+                <a href="#wholesale">Wholesale</a>
+                <a href="#about">About Us</a>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Come visit us</h3>
+                <p>First Gate from Ochanja Roundabout, Onitsha, Anambra State.</p>
+                <p>Retail and wholesale available.</p>
+                <p>Nationwide delivery available.</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mama Oge Ventures. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="toast-region" class="toast-region" role="status" aria-live="polite"></div>
+    <script src="store-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>Mama Oge Ventures | Admin</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="store-config.js"></script>
+</head>
+
+<body class="admin-page">
+
+    <header class="admin-header">
+        <a href="index.html" class="logo">
+            MAMA OGE<span>VENTURES</span>
+        </a>
+
+        <a href="index.html">Back to the shop</a>
+    </header>
+
+    <main class="admin-main">
+
+        <!-- ADMIN LOGIN -->
+        <section class="admin-auth-panel" id="admin-auth-panel">
+
+            <p class="subtitle">Private store access</p>
+
+            <h1>Order dashboard</h1>
+
+            <p>
+                Sign in with the authorized store admin email and password.
+            </p>
+
+            <form
+                id="admin-login-form"
+                class="checkout-form"
+                method="post"
+            >
+
+                <label>
+                    Admin email
+
+                    <input
+                        type="email"
+                        name="email"
+                        autocomplete="username"
+                        required
+                        maxlength="254"
+                        placeholder="Admin email address"
+                    >
+                </label>
+
+                <label>
+                    Password
+
+                    <input
+                        type="password"
+                        name="password"
+                        autocomplete="current-password"
+                        required
+                        minlength="8"
+                        maxlength="128"
+                    >
+                </label>
+
+                <button class="shop-btn" type="submit">
+                    Sign in
+                </button>
+
+            </form>
+
+            <p
+                id="admin-auth-message"
+                class="checkout-message"
+                role="status"
+                aria-live="polite"
+            ></p>
+
+        </section>
+
+
+        <!-- ORDERS DASHBOARD -->
+        <section id="orders" class="admin-dashboard" hidden>
+
+            <div class="admin-dashboard-heading">
+
+                <div>
+                    <p class="subtitle">Mama Oge Ventures</p>
+                    <h1>Incoming orders</h1>
+                </div>
+
+                <div class="admin-dashboard-actions">
+
+                    <button
+                        id="refresh-orders"
+                        type="button"
+                        class="filter-button"
+                    >
+                        Refresh
+                    </button>
+
+                    <button
+                        id="admin-sign-out"
+                        type="button"
+                        class="filter-button"
+                    >
+                        Sign out
+                    </button>
+
+                </div>
+
+            </div>
+
+            <p
+                id="orders-message"
+                class="checkout-message"
+                role="status"
+                aria-live="polite"
+            ></p>
+
+            <div id="orders-list" class="orders-list"></div>
+
+        </section>
+
+    </main>
+
+    <div
+        id="toast-region"
+        class="toast-region"
+        role="status"
+        aria-live="polite"
+    ></div>
+
+    <script type="module" src="admin.js"></script>
+
+</body>
+</html>
